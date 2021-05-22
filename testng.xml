@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<parameter name="Browser" value="edge"/>
+<parameter name="url" value="https://nikhil-gayki.herokuapp.com/admin/login"/>
+<parameter name="Username" value="admin@example.com"/>
+<parameter name="Password" value="password"/>
+<parameter name="ProductName" value="DemoProductOne"/>  
+<parameter name="Sku" value="TestUnit"/>  
+<parameter name="Description" value="This is the Test Description for DemoProductOne."/>  
+<parameter name="UpdatedDescription" value="This is the updated description."/>  
+ 
+  <test name="Testing TechVerito QA Problem">
+    <classes>
+      <class name="testPackage.TestClass"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

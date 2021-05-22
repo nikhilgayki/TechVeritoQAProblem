@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="UpdatedDescription" value="This is the updated description."/>
+  <parameter name="Description" value="This is the Test Description for DemoProductOne."/>
+  <parameter name="ProductName" value="DemoProductOne"/>
+  <parameter name="Username" value="admin@example.com"/>
+  <parameter name="Sku" value="TestUnit"/>
+  <parameter name="url" value="https://nikhil-gayki.herokuapp.com/admin/login"/>
+  <parameter name="Browser" value="edge"/>
+  <parameter name="Password" value="password"/>
+  <test thread-count="5" name="Testing TechVerito QA Problem(failed)">
+    <classes>
+      <class name="testPackage.TestClass">
+        <methods>
+          <include name="verify_MaxLength_of_Title_and_Sku_fields"/>
+          <include name="CloseBrowser"/>
+          <include name="login"/>
+          <include name="verify_Product_Deletion"/>
+          <include name="setup"/>
+          <include name="verify_Unique_Fields"/>
+          <include name="verify_the_Mandatory_fields"/>
+          <include name="verify_searching_Product"/>
+          <include name="verify_Product_Creation"/>
+          <include name="logout"/>
+          <include name="verify_Product_Updation"/>
+        </methods>
+      </class> <!-- testPackage.TestClass -->
+    </classes>
+  </test> <!-- Testing TechVerito QA Problem(failed) -->
+</suite> <!-- Failed suite [Suite] -->
